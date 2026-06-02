@@ -2,6 +2,7 @@
 
 * Студент: [Полякин Антон](https://up.htmlacademy.ru/htmlcss-individual/3/user/2403741).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Сайт: [Сайт](https://pentix1985.github.io/2403741-sedona-3/).
 
 ---
 

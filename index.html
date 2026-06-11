@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header class="main-header">
-      <a class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="#" alt="Логотип Седона">
       </a>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a>Главная</a>
           </li>
           <li class="nav-item">
-            <a href="#">О седоне</a>
+            <a href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a href="#">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
-      <div class="header-user-menu-wrapper">
-        <a class="search" href="#">
-          <span class="visually-hidden">
-            Поиск
-          </span>
-        </a>
-        <a class="favorite" href="#">
-          <span class="visually-hidden">
-            Избранное
-          </span>
-        </a>
-        <button class="user-menu-btn">Хочу сюда!</button>
-      </div>
+      <ul class="header-user-menu-list">
+        <li class="user-menu-item">
+          <a class="search" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+          </a>
+        </li>
+        <li class="user-menu-item">
+          <a class="favorite" href="#">
+            <span class="visually-hidden">
+              Избранное
+            </span>
+            <span class="favorite-count">
+              12
+            </span>
+          </a>
+        </li>
+      </ul>
+      <a class="header-user-menu-btn" href="#">
+        Хочу сюда!
+      </a>
     </header>
     <main>
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="#" alt="Каньйон">
+        <img src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
       <section class="reasons">
         <h2 class="reasons-title title">
@@ -52,8 +64,6 @@
           <li class="reasons-card card">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="reasons-img">
             <img src="#" alt="Часть города">
           </li>
           <li class="reasons-card card">
@@ -68,12 +78,10 @@
             <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="reasons-img" >
-            <img src="#" alt="Часть города">
-          </li>
           <li class="reasons-card card">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="#" alt="Каньон, столовые горы">
           </li>
         </ul>
       </section>
@@ -87,7 +95,7 @@
         <ul class="come-cards">
           <li class="come-card card">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле,  всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="come-card card">
             <h3>Еда</h3>
@@ -106,7 +114,7 @@
         <p class="interested-text text">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscription">
         <h2 class="subscription-title title">
@@ -115,34 +123,40 @@
         <p class="subscription-text text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form>
-          <input type="text">
-          <input type="submit" value="Подписаться">
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="form-user-mail">
+            Почта пользователя
+          </label>
+          <input type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
+          <button class="subscription-form-btn" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a href="#">
+          <a href="https://vk.com/htmlacademy">
             <span class="visually-hidden">VK</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#">
+          <a href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#">
+          <a href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="#">+7 (812) 812-12-12</a>
-      <a class="footer-logo" href="https://pentix1985.github.io/2403741-sedona-3/">
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="https://htmlacademy.ru/">
         <img src="#" alt="лого htmlacademy">
       </a>
     </footer>
   </body>
+
 </html>

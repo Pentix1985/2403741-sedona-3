@@ -14,14 +14,14 @@
       </a>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="index.html">Главная</a>
           </li>
           <li class="nav-item">
             <a href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a aria-current="page">Гостиницы</a>
+            <a class="nav-item-active" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -48,9 +48,9 @@
         Хочу сюда!
       </a>
     </header>
-    <main>
+    <main data-test="main">
       <section class="hotels" data-test="filter">
-        <h2 class="hotels-title">Гостиницы Седоны</h2>
+        <h1 class="hotels-title">Гостиницы Седоны</h1>
         <ol class="catalog-breadcrumbs">
           <li class="catalog-breadcrumbs-item">
             <a href="index.html">
@@ -65,43 +65,39 @@
           <fieldset class="catalog-filter-items">
             <legend>Инфраструктура:</legend>
             <label class="catalog-filter-item">
-              <input type='checkbox' name='pool' checked>
-              <span>Бассейн</span>
+              <input type="checkbox" name="pool" checked>
+              Бассейн
             </label>
             <label class="catalog-filter-item">
-              <input type='checkbox' name='parking' checked>
-              <span>Парковка</span>
+              <input type="checkbox" name="parking" checked>
+              Парковка
             </label>
             <label class="catalog-filter-item">
-              <input type='checkbox' name='wifi'>
-              <span>Wi-Fi</span>
+              <input type="checkbox" name="wifi">
+              Wi-Fi
             </label>
           </fieldset>
           <fieldset class="catalog-filter-items">
             <legend>Тип жилья:</legend>
             <label class="catalog-filter-item">
-              <input type='radio' name='hotel-type' value="hotel" checked>
-              <span>Гостиница</span>
+              <input type="radio" name="hotel-type" value="hotel" checked>
+              Гостиница
             </label>
             <label class="catalog-filter-item">
-              <input type='radio' name='hotel-type' value="motel">
-              <span>Мотель</span>
+              <input type="radio" name="hotel-type" value="motel">
+              Мотель
             </label>
             <label class="catalog-filter-item">
-              <input type='radio' name='hotel-type' value="apartments">
-              <span>Апартаменты</span>
+              <input type="radio" name="hotel-type" value="apartments">
+              Апартаменты
             </label>
           </fieldset>
           <fieldset class="catalog-filter-items">
             <legend>Стоимость, ₽:</legend>
-            <label>
-              <input type="number" value="0" name="min-price">
-              <span>от</span>
-            </label>
-            <label>
-              <input type="number" value="9000" name="max-price">
-              <span>до</span>
-            </label>
+            <label for="catalog-price-from">от</label>
+            <input type="number" value="0" name="min-price" id="catalog-price-from">
+            <label for="catalog-price-to">до</label>
+            <input type="number" value="9000" name="max-price" id="catalog-price-to">
             <div class="price-range-wrapper">
               <label class="visually-hidden">диапазон цен:</label>
               <input type="range" id="lower" min="0" max="100" step="1" aria-label="Смена минимальной стоимости">
@@ -153,29 +149,25 @@
               <p class="hotel-price">
                 Гостиница
                 <span class="hotel-price-value-wrapper">
-                  От
-                  <span class="hotel-price-value">
-                    4000
-                  </span>
-                  ₽
+                  От 4000 ₽
                 </span>
               </p>
               <div class="hotel-btns-wrapper">
-                <a class="hotel-details" href="#">Подробнее</a>
-                <button class="hotel-add-favorites">В избранное</button>
+                <a class="hotel-details" href="#">
+                  Подробнее
+                </a>
+                <button class="hotel-add-favorites" type="button">
+                  В избранное
+                </button>
               </div>
               <div class="hotel-rating-wrapper">
                 <p class="rating-stars rating-stars-4">
                   <span clas="visually-hidden">
-                    <span class="rating-stars-count">
-                      4
-                    </span>
-                    звезды
+                    4 звезды
                   </span>
                 </p>
                 <p class="rating">
-                  Рейтинг:
-                  <span class="rating-value">8,5</span>
+                  Рейтинг: 8,5
                 </p>
               </div>
             </div>
@@ -187,29 +179,21 @@
               <p class="hotel-price">
                 Гостиница
                 <span class="hotel-price-value-wrapper">
-                  От
-                  <span class="hotel-price-value">
-                    5000
-                  </span>
-                  ₽
+                  От 5000 ₽
                 </span>
               </p>
               <div class="hotel-btns-wrapper">
                 <a class="hotel-details" href="#">Подробнее</a>
-                <button class="hotel-add-favorites">В избранное</button>
+                <button class="hotel-add-favorites" type="button">В избранное</button>
               </div>
               <div class="hotel-rating-wrapper">
                 <p class="rating-stars rating-stars-4">
                   <span clas="visually-hidden">
-                    <span class="rating-stars-count">
-                      4
-                    </span>
-                    звезды
+                    4 звезды
                   </span>
                 </p>
                 <p class="rating">
-                  Рейтинг:
-                  <span class="rating-value">9,2</span>
+                  Рейтинг: 9,2
                 </p>
               </div>
             </div>
@@ -221,31 +205,25 @@
               <p class="hotel-price">
                 Гостиница
                 <span class="hotel-price-value-wrapper">
-                  От
-                  <span class="hotel-price-value">
-                    2500
-                  </span>
-                  ₽
+                  От 2500 ₽
                 </span>
               </p>
               <div class="hotel-btns-wrapper">
-                <a class="hotel-details" href="#">Подробнее</a>
-                <button class="hotel-add-favorites">В избранное</button>
+                <a class="hotel-details" href="#">
+                  Подробнее
+                </a>
+                <button class="hotel-add-favorites" type="button">
+                  В избранное
+                </button>
               </div>
               <div class="hotel-rating-wrapper">
                 <p class="rating-stars rating-stars-4">
                   <span clas="visually-hidden">
-                    <span class="rating-stars-count">
-                      3
-                    </span>
-                    звезды
+                    3 звезды
                   </span>
                 </p>
                 <p class="rating">
-                  Рейтинг:
-                  <span class="rating-value">
-                    6,9
-                  </span>
+                  Рейтинг: 6,9
                 </p>
               </div>
             </div>
@@ -257,54 +235,44 @@
               <p class="hotel-price">
                 Гостиница
                 <span class="hotel-price-value-wrapper">
-                  От
-                  <span class="hotel-price-value">
-                    1500
-                  </span>
-                  ₽
+                  От 1500 ₽
                 </span>
               </p>
               <div class="hotel-btns-wrapper">
                 <a class="hotel-details" href="#">Подробнее</a>
-                <button class="hotel-add-favorites">В избранное</button>
+                <button class="hotel-add-favorites" type="button">В избранное</button>
               </div>
               <div class="hotel-rating-wrapper">
                 <p class="rating-stars rating-stars-4">
                   <span clas="visually-hidden">
-                    <span class="rating-stars-count">
-                      2
-                    </span>
-                    звезды
+                    2 звезды
                   </span>
                 </p>
                 <p class="rating">
-                  Рейтинг:
-                  <span class="rating-value">
-                    5,0
-                  </span>
+                  Рейтинг: 5,0
                 </p>
               </div>
             </div>
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item pagination-item-active">
-            <a href="#">1</a>
+          <li class="pagination-item">
+            <a class="pagination-item-active" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-item-active" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-item-active" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">4</a>
+            <a class="pagination-item-active" href="#">4</a>
           </li>
           <li class="pagination-item">
             <span>...</span>
           </li>
           <li class="pagination-item">
-            <a href="#">10</a>
+            <a class="pagination-item-active" href="#">10</a>
           </li>
         </ul>
       </section>

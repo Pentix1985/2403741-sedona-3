@@ -9,19 +9,19 @@
 
   <body>
     <header class="main-header" data-test="header">
-      <a class="header-logo" href="index.html">
-        <img src="images/logo-processed.svg" width="140" height="70" alt="Логотип Седона">
+      <a class="header-logo" href="index.html" aria-current="page">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
       </a>
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="index.html">Главная</a>
+            <a class="nav-item-active" aria-current="page">Главная</a>
           </li>
           <li class="nav-item">
             <a href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-item-active" aria-current="page">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -38,6 +38,7 @@
             <span class="visually-hidden">
               Избранное
             </span>
+            <span class="visually-hidden">Отелей в избранном</span>
             <span class="favorite-count">
               12
             </span>
@@ -140,7 +141,8 @@
         </header>
         <ul class="hotels-list">
           <li class="hotel-list-item">
-            <img src="images/catalog/catalog-hotel-amara-resort-spa-processed.jpg" alt="Звездное небо из расщелины" width="300" height="212">
+            <img src="images/catalog/catalog-hotel-1.jpg" alt="Звездное небо из расщелины"
+              width="300" height="212">
             <div class="hotel-info-wrapper">
               <h3 class="hotel-title">Amara Resort & Spa</h3>
               <p class="hotel-price">
@@ -170,7 +172,8 @@
             </div>
           </li>
           <li class="hotel-list-item">
-            <img src="images/catalog/catalog-hotel-villas-at-poco-diablo-processed.jpg" alt="Столовые горы на фоне неба и радуга" width="300" height="212">
+            <img src="images/catalog/catalog-hotel-2.jpg"
+              alt="Столовые горы на фоне неба и радуга" width="300" height="212">
             <div class="hotel-info-wrapper">
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
               <p class="hotel-price">
@@ -196,7 +199,8 @@
             </div>
           </li>
           <li class="hotel-list-item">
-            <img src="images/catalog/catalog-hotel-desert-quail-inn-processed.jpg" alt="Столовые горы на фоне неба и деревья перед ними" width="300" height="212">
+            <img src="images/catalog/catalog-hotel-3.jpg"
+              alt="Столовые горы на фоне неба и деревья перед ними" width="300" height="212">
             <div class="hotel-info-wrapper">
               <h3 class="hotel-title">Desert Quail Inn</h3>
               <p class="hotel-price">
@@ -226,7 +230,8 @@
             </div>
           </li>
           <li class="hotel-list-item">
-            <img src="images/catalog/catalog-hotel-greentree-inn-processed.jpg" alt="Столовые горы на фоне звездного неба" width="300" height="212">
+            <img src="images/catalog/catalog-hotel-4.jpg"
+              alt="Столовые горы на фоне звездного неба" width="300" height="212">
             <div class="hotel-info-wrapper">
               <h3 class="hotel-title">GreenTree Inn</h3>
               <p class="hotel-price">
@@ -311,7 +316,7 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img src="images/html-academy-logo-processed.svg" width="115" height="33" alt="лого htmlacademy">
+        <img src="images/html-academy-logo.svg" width="115" height="33" alt="лого htmlacademy">
       </a>
     </footer>
   </body>

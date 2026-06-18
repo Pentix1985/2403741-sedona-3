@@ -14,12 +14,6 @@
   font-display: swap;
 }
 
-html {
-  background-color: #F2F2F2;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 body {
   font-family: "PT sans", sans-serif;
   font-size: 18px;
@@ -38,11 +32,18 @@ body {
   background-color: #FFFFFF;
 }
 
+.favorite,
+.search {
+  text-decoration: none;
+}
+
 .favorite-count {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB54F;
 }
 
 .button {

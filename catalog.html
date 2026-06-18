@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона - каталог</title>
   </head>
 
@@ -15,13 +16,13 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-item-active" aria-current="page">Главная</a>
+            <a href="index.html" class="nav-item-active">Главная</a>
           </li>
           <li class="nav-item">
             <a href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -106,8 +107,8 @@
             </div>
           </fieldset>
           <div class="catalog-form-btn-wrapper">
-            <button class="catalog-submit-btn" type="submit">Применить</button>
-            <button class="catalog-reset-btn" type="reset">Сбросить</button>
+            <button class="catalog-submit-btn form-btn" type="submit">Применить</button>
+            <button class="catalog-reset-btn form-btn" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -258,27 +259,27 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-item-active" href="#">1</a>
+          <li>
+            <a class="pagination-item pagination-item-active" href="#">1</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-active" href="#">2</a>
+          <li>
+            <a class="pagination-item" href="#">2</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-active" href="#">3</a>
+          <li>
+            <a class="pagination-item" href="#">3</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-active" href="#">4</a>
+          <li>
+            <a class="pagination-item" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-points-item">
             <span>...</span>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-active" href="#">10</a>
+          <li>
+            <a class="pagination-item" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="subscription" data-test="subscribe">
+      <section class="subscription catalog-subscription" data-test="subscribe">
         <h2 class="subscription-title title">
           Подпишитесь на рассылку
         </h2>
@@ -290,7 +291,7 @@
             Почта пользователя
           </label>
           <input type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
-          <button class="subscription-form-btn" type="submit">
+          <button class="subscription-form-btn form-btn" type="submit">
             Подписаться
           </button>
         </form>

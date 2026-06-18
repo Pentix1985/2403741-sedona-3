@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "PT sans";
+  font-style: Regular;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT sans";
+  font-style: Regular;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+
+html {
+  background-color: #F2F2F2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body {
+  font-family: "PT sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  box-shadow: 0 0 15px 0 #00000033;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.header-nav a {
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
+.favorite-count {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.hero {
+  background-size: 100% auto;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.card {
+  background-color: #83B3D31F;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-weight: 400;
+  text-align: center;
+}
+
+.card img {
+  display: block;
+}
+
+.reasons-card:first-child {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.reasons-cards li:nth-child(3) {
+  background-color: #83B3D333;
+}
+
+.reasons-card:last-child {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.come-cards li:nth-child(2) {
+  background-color: #FFFFFF;
+}
+
+.subscription {
+  background-size: 100% auto;
+  background-image: url("../images/subscribe-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscription-title, .subscription-text {
+  color: #FFFFFF;
+}
+
+.form-btn {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+}
+
+.footer-phone {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotels {
+  background-size: 100% auto;
+  background-image: url("../images/catalog-filters-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-breadcrumbs {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.catalog-form-filters {
+  color: #FFFFFF;
+}
+
+.catalog-filter-items legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-items label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-submit-btn {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-reset-btn {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.hotels-found-title {
+  text-align: left;
+}
+
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-details {
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-add-favorites {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+.pagination-item {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-item-active {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-points-item span {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.catalog-subscription {
+  background-image: none;
+}
+
+.catalog-subscription h2,
+.catalog-subscription p {
+  color: #000000;
+}

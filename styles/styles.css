@@ -20,7 +20,7 @@ body {
   line-height: 21px;
   box-shadow: -15px 0 15px -5px #00000033, 15px 0 15px -5px #00000033;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
 }
 
 .header-nav a {
@@ -29,7 +29,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .favorite,
@@ -42,8 +42,8 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #7DB54F;
+  color: #ffffff;
+  background-color: #7db54f;
 }
 
 .button {
@@ -52,7 +52,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 .card {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
 .card h3 {
@@ -100,21 +100,21 @@ body {
 }
 
 .reasons-card:first-child {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .reasons-cards li:nth-child(3) {
-  background-color: #83B3D333;
+  background-color: #83b3d333;
 }
 
 .reasons-card:last-child {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .come-cards li:nth-child(2) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .subscription {
@@ -124,15 +124,15 @@ body {
 }
 
 .subscription-title, .subscription-text {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form-btn {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  background-color: #82B3D3;
+  background-color: #82b3D3;
 }
 
 .footer-phone {
@@ -152,13 +152,13 @@ body {
 }
 
 .catalog-breadcrumbs {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
 }
 
 .catalog-form-filters {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog-filter-items legend {
@@ -197,7 +197,7 @@ body {
 }
 
 .hotel-details {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
   font-weight: 700;
@@ -208,8 +208,8 @@ body {
 }
 
 .hotel-add-favorites {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -224,12 +224,12 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-item {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   font-family: PT Sans;
   font-weight: 700;
   font-size: 20px;
@@ -241,7 +241,7 @@ body {
 
 .pagination-item-active {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-points-item span {

@@ -16,13 +16,13 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="index.html" class="nav-item-active">Главная</a>
+            <a class="nav-link nav-item-active" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a href="#">О Седоне</a>
+            <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a aria-current="page">Гостиницы</a>
+            <a class="nav-link" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,7 @@
           </a>
         </li>
       </ul>
-      <a class="header-user-menu-btn" href="#">
+      <a class="button" href="#">
         Хочу сюда!
       </a>
     </header>
@@ -65,7 +65,7 @@
         </ol>
         <form class="catalog-form-filters" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-items">
-            <legend>Инфраструктура:</legend>
+            <legend class="catalog-filter-items-title">Инфраструктура:</legend>
             <label class="catalog-filter-item">
               <input type="checkbox" name="pool" checked>
               Бассейн
@@ -80,7 +80,7 @@
             </label>
           </fieldset>
           <fieldset class="catalog-filter-items">
-            <legend>Тип жилья:</legend>
+            <legend class="catalog-filter-items-title">Тип жилья:</legend>
             <label class="catalog-filter-item">
               <input type="radio" name="hotel-type" value="hotel" checked>
               Гостиница
@@ -95,10 +95,10 @@
             </label>
           </fieldset>
           <fieldset class="catalog-filter-items">
-            <legend>Стоимость, ₽:</legend>
-            <label for="catalog-price-from">от</label>
+            <legend class="catalog-filter-items-title">Стоимость, ₽:</legend>
+            <label for="catalog-price-range catalog-price-range-min">от</label>
             <input type="number" value="0" name="min-price" id="catalog-price-from">
-            <label for="catalog-price-to">до</label>
+            <label for="catalog-price-range catalog-price-range-max">до</label>
             <input type="number" value="9000" name="max-price" id="catalog-price-to">
             <div class="price-range-wrapper">
               <label class="visually-hidden">диапазон цен:</label>
@@ -185,7 +185,7 @@
               </p>
               <div class="hotel-btns-wrapper">
                 <a class="hotel-details" href="#">Подробнее</a>
-                <button class="hotel-add-favorites" type="button">В избранное</button>
+                <button class="hotel-add-favorites favorite-added" type="button">В избранное</button>
               </div>
               <div class="hotel-rating-wrapper">
                 <p class="rating-stars rating-stars-4">
@@ -260,7 +260,7 @@
         </ul>
         <ul class="pagination">
           <li>
-            <a class="pagination-item pagination-item-active" href="#">1</a>
+            <a class="pagination-item pagination-item-active" aria-current="page">1</a>
           </li>
           <li>
             <a class="pagination-item" href="#">2</a>
@@ -272,14 +272,14 @@
             <a class="pagination-item" href="#">4</a>
           </li>
           <li class="pagination-points-item">
-            <span>...</span>
+            <span class="pagination-points">...</span>
           </li>
           <li>
             <a class="pagination-item" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="subscription catalog-subscription" data-test="subscribe">
+      <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title title">
           Подпишитесь на рассылку
         </h2>
@@ -290,7 +290,7 @@
           <label class="visually-hidden" for="form-user-mail">
             Почта пользователя
           </label>
-          <input type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
+          <input class="subscription-mail" type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
           <button class="subscription-form-btn form-btn" type="submit">
             Подписаться
           </button>

@@ -16,13 +16,13 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-item-active" aria-current="page">Главная</a>
+            <a class="nav-link nav-item-active" aria-current="page">Главная</a>
           </li>
           <li class="nav-item">
-            <a href="#">О Седоне</a>
+            <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -63,27 +63,27 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
         <ul class="reasons-cards">
-          <li class="reasons-card card">
-            <h3>Настоящий городок</h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="images/town-street.jpg" width="800" height="385" alt="Часть улицы городка">
+          <li class="card reasons-card-with-img">
+            <h3 class="card-title">Настоящий городок</h3>
+            <p class="card-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="reason-img" src="images/town-street.jpg" width="800" height="385" alt="Часть улицы городка">
           </li>
-          <li class="reasons-card card">
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
+          <li class="card">
+            <h3 class="card-title">Небольшая площадь</h3>
+            <p class="card-text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons-card card">
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="card">
+            <h3 class="card-title">Красивая дорога</h3>
+            <p class="card-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons-card card">
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="card">
+            <h3 class="card-title">Мало туристов</h3>
+            <p class="card-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="reasons-card card">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="images/hell-bridge.jpg" width="800" height="385" alt="Каньон, столовые горы, мост дьявола">
+          <li class="card reasons-card-with-img">
+            <h3 class="card-title">Там есть мост дьявола</h3>
+            <p class="card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="reason-img" src="images/hell-bridge.jpg" width="800" height="385" alt="Каньон, столовые горы, мост дьявола">
           </li>
         </ul>
       </section>
@@ -95,17 +95,17 @@
           Опытный персонал и качественное обслуживание!
         </p>
         <ul class="come-cards">
-          <li class="come-card card">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="card">
+            <h3 class="card-title">Жильё</h3>
+            <p class="card-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="come-card card">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <li class="card">
+            <h3 class="card-title">Еда</h3>
+            <p class="card-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="come-card card">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и настоящего местного производства!</p>
+          <li class="card">
+            <h3 class="card-title">Сувениры</h3>
+            <p class="card-text">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -118,7 +118,7 @@
         </p>
         <button class="button" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscription" data-test="subscribe">
+      <section class="subscription main-subscription" data-test="subscribe">
         <h2 class="subscription-title title">
           Подпишитесь на рассылку
         </h2>
@@ -129,7 +129,7 @@
           <label class="visually-hidden" for="form-user-mail">
             Почта пользователя
           </label>
-          <input type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
+          <input class="subscription-mail" type="email" id="form-user-mail" name="email" required placeholder="Ваш e-mail">
           <button class="subscription-form-btn form-btn" type="submit">
             Подписаться
           </button>

@@ -222,6 +222,11 @@ body {
   padding-bottom: 82px;
 }
 
+.hero-img {
+  width: 458px;
+  height: 352px;
+}
+
 .title {
   margin: 0;
   margin-bottom: 20px;
@@ -243,7 +248,7 @@ body {
 
 .card {
   width: 400px;
-  height: 385px;
+  /* height: 385px; */
   padding: 102px 85px 102px 85px;
   background-color: #82b3d3;
   box-sizing: border-box;
@@ -264,10 +269,11 @@ body {
   text-align: center;
 }
 
-.reasons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.reasons-title-text-wrapper {
+  width: 651px;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .reasons-card-with-img {
@@ -280,14 +286,10 @@ body {
   padding: 102px 85px 102px 85px;
 }
 
-.reasons-title-text-wrapper {
-  padding-top: 69px;
-  padding-bottom: 69px;
-  width: 651px;
-}
-
 .reason-img {
   display: block;
+  width: 800px;
+  height: 385px;
 }
 
 .reasons-cards {
@@ -319,13 +321,8 @@ body {
   flex-direction: row-reverse;
 }
 
-.come {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .come-title-text-wrapper {
+  margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
   width: 505px;
@@ -347,28 +344,27 @@ body {
   background-color: #ffffff;
 }
 
+.interested-title-text-wrapper {
+  width: 592px;
+  margin: 0 auto;
+}
+
 .interested {
   padding-top: 96px;
   padding-bottom: 96px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .interested-text {
-  width: 592px;
   margin-bottom: 54px;
 }
 
 .interested-btn {
+  margin: inherit;
   padding: 8px 50px;
   cursor: pointer;
 }
 
 .subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-size: cover;
   color: #000000;
   background-color: #ffffff;
@@ -378,6 +374,8 @@ body {
 
 .subscription-title-text-wrapper {
   width: 475px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 54px;
 }
 
@@ -390,6 +388,7 @@ body {
 }
 
 .subscription-form {
+  margin: 0 auto;
   width: 684px;
   display: flex;
 }
@@ -590,6 +589,11 @@ body {
   margin-bottom: 40px;
 }
 
+.hotel-list-item-img {
+  width: 300px;
+  height: 212px;
+}
+
 .catalog-view-control-wrapper {
   display: flex;
   gap: 70px;
@@ -694,6 +698,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -713,8 +718,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
+  padding: 12px 18px;
   border-radius: 4px;
 }
 

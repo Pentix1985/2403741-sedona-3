@@ -103,11 +103,11 @@
             </fieldset>
             <fieldset class="catalog-filter-items">
               <legend class="catalog-filter-items-title">Стоимость, ₽:</legend>
-              <label for="catalog-price-range catalog-price-range-min">от</label>
-              <input type="number" value="0" name="min-price" id="catalog-price-from">
-              <label for="catalog-price-range catalog-price-range-max">до</label>
-              <input type="number" value="9000" name="max-price" id="catalog-price-to">
-              <div class="price-range-wrapper">
+              <label class="visually-hidden" for="catalog-price-range catalog-price-range-min">от</label>
+              <input class="visually-hidden" type="number" value="0" name="min-price" id="catalog-price-from">
+              <label class="visually-hidden" for="catalog-price-range catalog-price-range-max">до</label>
+              <input class="visually-hidden" type="number" value="9000" name="max-price" id="catalog-price-to">
+              <div class="visually-hidden price-range-wrapper">
                 <label class="visually-hidden">диапазон цен:</label>
                 <input type="range" id="lower" min="0" max="100" step="1" aria-label="Смена минимальной стоимости">
                 <input type="range" id="upper" min="0" max="100" step="1" aria-label="Смена максимальной стоимости">
@@ -151,119 +151,97 @@
           </header>
           <ul class="hotels-list display-card">
             <li class="hotel-list-item">
-              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-1.jpg" alt="Звездное небо из расщелины" width="300" height="212">
-              <div class="hotel-info-wrapper">
-                <h3 class="hotel-title">Amara Resort & Spa</h3>
-                <p class="hotel-price">
-                  Гостиница
-                  <span class="hotel-price-value-wrapper">
-                    От 4000 ₽
-                  </span>
-                </p>
-                <div class="hotel-btns-wrapper">
-                  <a class="hotel-details" href="#">
-                    Подробнее
-                  </a>
-                  <button class="hotel-add-favorites" type="button">
-                    В избранное
-                  </button>
-                </div>
-                <div class="hotel-rating-wrapper">
-                  <p class="rating-stars rating-stars-4">
-                    <span clas="visually-hidden">
-                      4 звезды
-                    </span>
-                  </p>
-                  <p class="rating">
-                    Рейтинг: 8,5
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="hotel-list-item">
-              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-2.jpg" alt="Столовые горы на фоне неба и радуга" width="300"
-                height="212">
-              <div class="hotel-info-wrapper">
-                <h3 class="hotel-title">Villas at Poco Diablo</h3>
-                <p class="hotel-price">
-                  Гостиница
-                  <span class="hotel-price-value-wrapper">
-                    От 5000 ₽
-                  </span>
-                </p>
-                <div class="hotel-btns-wrapper">
-                  <a class="hotel-details" href="#">Подробнее</a>
-                  <button class="hotel-add-favorites favorite-added" type="button">В избранное</button>
-                </div>
-                <div class="hotel-rating-wrapper">
-                  <p class="rating-stars rating-stars-4">
-                    <span clas="visually-hidden">
-                      4 звезды
-                    </span>
-                  </p>
-                  <p class="rating">
-                    Рейтинг: 9,2
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="hotel-list-item">
-              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-3.jpg" alt="Столовые горы на фоне неба и деревья перед ними"
+              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-1.jpg" alt="Звездное небо из расщелины"
                 width="300" height="212">
-              <div class="hotel-info-wrapper">
-                <h3 class="hotel-title">Desert Quail Inn</h3>
-                <p class="hotel-price">
-                  Гостиница
-                  <span class="hotel-price-value-wrapper">
-                    От 2500 ₽
-                  </span>
-                </p>
-                <div class="hotel-btns-wrapper">
-                  <a class="hotel-details" href="#">
-                    Подробнее
-                  </a>
-                  <button class="hotel-add-favorites" type="button">
-                    В избранное
-                  </button>
-                </div>
-                <div class="hotel-rating-wrapper">
-                  <p class="rating-stars rating-stars-4">
-                    <span clas="visually-hidden">
-                      3 звезды
-                    </span>
-                  </p>
-                  <p class="rating">
-                    Рейтинг: 6,9
-                  </p>
-                </div>
-              </div>
+              <h3 class="hotel-title">Amara Resort & Spa</h3>
+              <p class="hotel-price">
+                Гостиница
+                <span class="hotel-price-value-wrapper">
+                  От 4000 ₽
+                </span>
+              </p>
+              <a class="button hotel-details" href="#">
+                Подробнее
+              </a>
+              <button class="button button-color-form hotel-add-favorites" type="button">
+                В избранное
+              </button>
+              <p class="rating-stars rating-stars-4">
+                <span class="visually-hidden">
+                  4 звезды
+                </span>
+              </p>
+              <p class="rating">
+                Рейтинг: 8,5
+              </p>
             </li>
             <li class="hotel-list-item">
-              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-4.jpg" alt="Столовые горы на фоне звездного неба" width="300"
-                height="212">
-              <div class="hotel-info-wrapper">
-                <h3 class="hotel-title">GreenTree Inn</h3>
-                <p class="hotel-price">
-                  Гостиница
-                  <span class="hotel-price-value-wrapper">
-                    От 1500 ₽
-                  </span>
-                </p>
-                <div class="hotel-btns-wrapper">
-                  <a class="hotel-details" href="#">Подробнее</a>
-                  <button class="hotel-add-favorites" type="button">В избранное</button>
-                </div>
-                <div class="hotel-rating-wrapper">
-                  <p class="rating-stars rating-stars-4">
-                    <span clas="visually-hidden">
-                      2 звезды
-                    </span>
-                  </p>
-                  <p class="rating">
-                    Рейтинг: 5,0
-                  </p>
-                </div>
-              </div>
+              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-2.jpg"
+                alt="Столовые горы на фоне неба и радуга" width="300" height="212">
+              <h3 class="hotel-title">Villas at Poco Diablo</h3>
+              <p class="hotel-price">
+                Гостиница
+                <span class="hotel-price-value-wrapper">
+                  От 5000 ₽
+                </span>
+              </p>
+              <a class="button hotel-details" href="#">Подробнее</a>
+              <button class="button hotel-add-favorites favorite-added" type="button">В избранном</button>
+              <p class="rating-stars rating-stars-4">
+                <span class="visually-hidden">
+                  4 звезды
+                </span>
+              </p>
+              <p class="rating">
+                Рейтинг: 9,2
+              </p>
+            </li>
+            <li class="hotel-list-item">
+              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-3.jpg"
+                alt="Столовые горы на фоне неба и деревья перед ними" width="300" height="212">
+
+              <h3 class="hotel-title">Desert Quail Inn</h3>
+              <p class="hotel-price">
+                Гостиница
+                <span class="hotel-price-value-wrapper">
+                  От 2500 ₽
+                </span>
+              </p>
+              <a class="button hotel-details" href="#">
+                Подробнее
+              </a>
+              <button class="button button-color-form hotel-add-favorites" type="button">
+                В избранное
+              </button>
+              <p class="rating-stars rating-stars-4">
+                <span class="visually-hidden">
+                  3 звезды
+                </span>
+              </p>
+              <p class="rating">
+                Рейтинг: 6,9
+              </p>
+            </li>
+            <li class="hotel-list-item">
+              <img class="hotel-list-item-img" src="images/catalog/catalog-hotel-4.jpg"
+                alt="Столовые горы на фоне звездного неба" width="300" height="212">
+              <h3 class="hotel-title">GreenTree Inn</h3>
+              <p class="hotel-price">
+                Гостиница
+                <span class="hotel-price-value-wrapper">
+                  От 1500 ₽
+                </span>
+              </p>
+              <a class="button hotel-details" href="#">Подробнее</a>
+              <button class="button button-color-form hotel-add-favorites" type="button">В избранное</button>
+              <p class="rating-stars rating-stars-4">
+                <span class="visually-hidden">
+                  2 звезды
+                </span>
+              </p>
+              <p class="rating">
+                Рейтинг: 5,0
+              </p>
             </li>
           </ul>
           <ul class="pagination">

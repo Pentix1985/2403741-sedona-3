@@ -651,19 +651,20 @@ body {
 }
 
 .display-card li {
-  display: grid;
-  grid-template-rows: repeat(5, max-content);
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 20px;
   width: 340px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  column-gap: 20px;
-  row-gap: 16px;
 }
 
-.display-card img {
-  grid-column: 1 / -1;
+.hotel-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 .display-card h3 {
@@ -684,11 +685,17 @@ body {
 }
 
 /* TODO Remove */
-.display-list {
+/* .display-list {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 }
+
+.display-list li {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+} */
 
 .hotels-found-title {
   text-align: left;

@@ -628,6 +628,7 @@ body {
 .hotel-list-item-img {
   width: 300px;
   height: 212px;
+  margin-bottom: 16px;
 }
 
 .catalog-view-control-wrapper {
@@ -655,7 +656,6 @@ body {
 .display-card li {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   padding: 20px;
   width: 340px;
   border: 1px solid #e5e5e5;
@@ -667,6 +667,8 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 16px;
+  flex-grow: 1;
+  grid-template-rows: 1fr auto;
 }
 
 .display-card h3 {
@@ -675,8 +677,14 @@ body {
 
 .display-card .hotel-price {
   grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
+  color: #333333;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hotel-price-value-wrapper {
+  text-align: right;
 }
 
 /* TODO Remove */
@@ -708,10 +716,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-}
-
-.hotel-price {
-  color: #333333;
 }
 
 .favorite-added {

@@ -581,16 +581,20 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.html-logo:hover {
-  fill: #756157;
+.footer-logo:hover {
+  color: #756157;
 }
 
-.fhtml-logo:focus {
-  fill: #756157;
+.footer-logo:focus {
+  color: #756157;
 }
 
-.html-logo:active {
-  fill: rgba(117, 97, 87, 0.3);
+.footer-logo:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.html-logo {
+  fill: currentColor;
 }
 
 .hotels {

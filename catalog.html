@@ -112,7 +112,7 @@
               </div>
             </fieldset>
             <div class="catalog-form-btn-wrapper">
-              <button class="button button-color-form" type="submit">Применить</button>
+              <button class="button button-form" type="submit">Применить</button>
               <button class="button reset-button-color-form" type="reset">Сбросить</button>
             </div>
           </form>
@@ -122,30 +122,28 @@
             <h2 class="hotels-found-title title">
               Найдено гостиниц: 38
             </h2>
-            <div class="catalog-view-control-wrapper">
-              <select class="catalog-sort-select" aria-label="Выбор сортировки">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap" selected>Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-              <ul class="display-types">
-                <li class="display-type-item display-type-active">
-                  <a class="display-type-tile display-type-btn" href="catalog.html?view=tile">
-                    <span class="visually-hidden">Отобразить плиткой</span>
-                  </a>
-                </li>
-                <li class="display-type-item">
-                  <a class="display-type-card display-type-btn" href="catalog.html?view=card">
-                    <span class="visually-hidden">Отобразить карточками</span>
-                  </a>
-                </li>
-                <li class="display-type-item">
-                  <a class="display-type-list display-type-btn" href="catalog.html?view=list">
-                    <span class="visually-hidden">Отобразить списком</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <select class="catalog-sort-select" aria-label="Выбор сортировки">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="display-types">
+              <li class="display-type-item">
+                <a class="display-type-card display-type-btn display-type-active" href="catalog.html?view=tile">
+                  <span class="visually-hidden">Отобразить плиткой</span>
+                </a>
+              </li>
+              <li class="display-type-item">
+                <a class="display-type-tile display-type-btn" href="catalog.html?view=card">
+                  <span class="visually-hidden">Отобразить карточками</span>
+                </a>
+              </li>
+              <li class="display-type-item">
+                <a class="display-type-list display-type-btn" href="catalog.html?view=list">
+                  <span class="visually-hidden">Отобразить списком</span>
+                </a>
+              </li>
+            </ul>
           </header>
           <ul class="hotels-list display-list display-card">
             <li class="hotel-list-item">
@@ -161,7 +159,7 @@
                 <a class="button hotel-details" href="#">
                   Подробнее
                 </a>
-                <button class="button button-color-form hotel-add-favorites" type="button">
+                <button class="button button-form hotel-add-favorites" type="button">
                   В избранное
                 </button>
                 <p class="rating-stars rating-stars-4">
@@ -211,7 +209,7 @@
                 <a class="button hotel-details" href="#">
                   Подробнее
                 </a>
-                <button class="button button-color-form hotel-add-favorites" type="button">
+                <button class="button button-form hotel-add-favorites" type="button">
                   В избранное
                 </button>
                 <p class="rating-stars rating-stars-4">
@@ -236,7 +234,7 @@
                   </span>
                 </p>
                 <a class="button hotel-details" href="#">Подробнее</a>
-                <button class="button button-color-form hotel-add-favorites" type="button">В избранное</button>
+                <button class="button button-form hotel-add-favorites" type="button">В избранное</button>
                 <p class="rating-stars rating-stars-4">
                   <span class="visually-hidden">
                     2 звезды
@@ -284,7 +282,7 @@
             </label>
             <input class="subscription-mail" type="email" id="form-user-mail" name="email" required
               placeholder="Ваш e-mail">
-            <button class="button button-large button-color-form button-subscription" type="submit">
+            <button class="button button-large button-form button-subscription" type="submit">
               Подписаться
             </button>
           </form>

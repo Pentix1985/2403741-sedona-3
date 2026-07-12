@@ -87,6 +87,18 @@ body {
   height: 64px;
 }
 
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:focus {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}
+
 .header-user-menu-wrapper {
   display: flex;
   gap: 20px;
@@ -123,6 +135,14 @@ body {
   background-position: 50% 50%;
 }
 
+.user-menu-item-link:hover {
+  background-color: rgba(117, 97, 87, 0.1);
+}
+
+.user-menu-item-link:hover .favorite-count {
+  transform: scale(1.5);
+}
+
 .search {
   background-image: url("../images/icons/search.svg");
 }
@@ -144,14 +164,15 @@ body {
   padding: 20px 16px 20px 16px;
   cursor: pointer;
   max-width: 100%;
+  transition: background-color 0.5s ease;
 }
 
 .nav-link:hover {
-  color: #756157;
+  background-color: rgba(117, 97, 87, 0.1);
 }
 
 .nav-link:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.1);
 }
 
 .nav-item {
@@ -181,6 +202,7 @@ body {
 }
 
 .favorite-count {
+  display: inline-block;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -192,6 +214,7 @@ body {
   top: 11px;
   right: 3px;
   border-radius: 50%;
+  transition: transform 0.2s ease;
 }
 
 .button {
@@ -262,13 +285,13 @@ body {
 
 .hero {
   background-image:
-    url("../images/hero-bg.jpg"),
-    url("../images/hero-decor.svg");
+    url("../images/hero-decor.svg"),
+    url("../images/hero-bg.jpg");
   color: #ffffff;
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto, cover;
+  background-position: bottom center, center;
   padding-top: 51px;
   text-align: center;
   padding-bottom: 82px;
@@ -407,6 +430,29 @@ body {
   background-color: #ffffff;
 }
 
+.come-cards .card .card-title::before {
+  content: "";
+  display: inline-block;
+  min-height: 76px;
+  width: 100%;
+  background-color: rgba(131, 179, 211, 1);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  margin-bottom: 30px;
+}
+
+.come-cards .card .advantage-home::before {
+  mask-image: url("../images/icons/advantage-home.svg");
+}
+
+.come-cards .card .advantage-burger::before {
+  mask-image: url("../images/icons/advantage-burger.svg");
+}
+
+.come-cards .card .advantage-prize::before {
+  mask-image: url("../images/icons/advantage-prize.svg");
+}
+
 .come-cards .card .card-title::after {
   content: "";
   display: none;
@@ -478,6 +524,14 @@ body {
   flex-shrink: 0;
 }
 
+.subscription-mail:hover {
+  background-color: #e5e5e5;
+}
+
+.subscription-mail:focus {
+  background-color: #e5e5e5;
+}
+
 .button-subscription {
   padding: 8px 50px;
   border: 0;
@@ -530,28 +584,37 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-logo {
-  justify-self: end;
-}
-
 .social-link {
   display: block;
   width: inherit;
   height: inherit;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-color: #83b3d3;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+}
+
+.social-link:hover {
+  background-color: #68a2ca;
+}
+
+.social-link:focus {
+  background-color: #68a2ca;
+}
+
+.social-link:active {
+  background-color: rgba(104, 162, 202, 0.3);
 }
 
 .social-vk {
-  background-image: url("../images/social/vk.svg");
+  mask-image: url("../images/social/vk.svg");
 }
 
 .social-telegram {
-  background-image: url("../images/social/telegram.svg");
+  mask-image: url("../images/social/telegram.svg");
 }
 
 .social-youtube {
-  background-image: url("../images/social/youtube.svg");
+  mask-image: url("../images/social/youtube.svg");
 }
 
 .footer-social-item {
@@ -579,6 +642,11 @@ body {
 
 .footer-phone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo {
+  display: inline-block;
+  justify-self: end;
 }
 
 .footer-logo:hover {

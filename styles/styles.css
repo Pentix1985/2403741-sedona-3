@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,12 +37,6 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 html {
@@ -133,6 +133,7 @@ body {
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition: background-color 0.5s ease;
 }
 
 .user-menu-item-link:hover {
@@ -275,6 +276,20 @@ body {
 
 .reset-button-color-form {
   background-color: transparent;
+}
+
+.reset-button-color-form:hover {
+  background-color: transparent;
+  opacity: 60%;
+}
+
+.reset-button-color-form:focus {
+  background-color: transparent;
+}
+
+.reset-button-color-form:active {
+  background-color: transparent;
+  opacity: 30%;
 }
 
 .button-large {
@@ -645,6 +660,7 @@ body {
 }
 
 .footer-logo {
+  color: inherit;
   display: inline-block;
   justify-self: end;
 }
@@ -691,7 +707,54 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+}
+
+.catalog-breadcrumbs-link {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-color: currentColor;
+  mask-image: url("../images/icons/arrow-right.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  margin: 0 10px;
+}
+
+.catalog-breadcrumbs-link:not([aria-current="page"]):hover {
+  opacity: 70%;
+}
+
+.catalog-breadcrumbs-link:not([aria-current="page"]):focus {
+  opacity: 70%;
+}
+
+.catalog-breadcrumbs-link:not([aria-current="page"]):active {
+  opacity: 70%;
+}
+
+.catalog-breadcrumbs-item:first-child .catalog-breadcrumbs-link {
+  width: 13px;
+  height: 15px;
+  background-color: #ffffff;
+  mask-image: url("../images/icons/home.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .catalog-form-filters {
@@ -753,14 +816,25 @@ body {
   background-color: transparent;
 }
 
-.catalog-sort-select {
+.catalog-sort {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   width: 292px;
   height: 49px;
-  padding: 14px 20px;
+  padding-left: 20px;
+  appearance: none;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url("../images/icons/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.catalog-sort:hover {
+  border: 2px solid #68a2ca;
 }
 
 .catalog-price-range {
@@ -844,6 +918,34 @@ body {
   margin-right: auto;
 }
 
+.rating-stars {
+  background-color: #83b3d3;
+  mask-image: url("../images/icons/star.svg");
+  mask-position: left;
+  mask-repeat: space no-repeat;
+  max-width: 96px;
+}
+
+.rating-stars-1 {
+  width: 24px;
+}
+
+.rating-stars-2 {
+  width: 42px;
+}
+
+.rating-stars-3 {
+  width: 60px;
+}
+
+.rating-stars-4 {
+  width: 78px;
+}
+
+.rating-stars-5 {
+  width: 96px;
+}
+
 .display-type-btn {
   display: block;
   height: 48px;
@@ -852,6 +954,14 @@ body {
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.display-type-btn:hover {
+  border: 2px solid #000000;
+}
+
+.display-type-btn:active {
+  border: 2px solid #000000;
 }
 
 .display-type-active {
@@ -881,6 +991,18 @@ body {
 
 .favorite-added {
   background-color: #7db54f;
+}
+
+.favorite-added:hover {
+  background-color: #6c9e42;
+}
+
+.favorite-added:focus {
+  background-color: #6c9e42;
+}
+
+.favorite-added:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
@@ -920,6 +1042,18 @@ body {
   padding: 12px 18px;
   border-radius: 4px;
   min-width: 60px;
+}
+
+.pagination-item:not(.pagination-item-active):hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-item:not(.pagination-item-active):focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-item:not(.pagination-item-active):active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item-active {

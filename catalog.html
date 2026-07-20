@@ -73,44 +73,50 @@
           <form class="catalog-form-filters" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-items">
               <legend class="catalog-filter-items-title">Инфраструктура:</legend>
-              <label class="catalog-filter-item">
-                <input type="checkbox" name="pool" checked>
+              <label class="catalog-filter-item" for="pool">
+                <input class="catalog-filter-checkbox" id="pool" type="checkbox" name="pool" checked>
                 Бассейн
               </label>
               <label class="catalog-filter-item">
-                <input type="checkbox" name="parking" checked>
+                <input class="catalog-filter-checkbox" type="checkbox" name="parking" checked>
                 Парковка
               </label>
               <label class="catalog-filter-item">
-                <input type="checkbox" name="wifi">
+                <input class="catalog-filter-checkbox" type="checkbox" name="wifi">
                 Wi-Fi
               </label>
             </fieldset>
             <fieldset class="catalog-filter-items">
               <legend class="catalog-filter-items-title">Тип жилья:</legend>
               <label class="catalog-filter-item">
-                <input type="radio" name="hotel-type" value="hotel" checked>
+                <input class="catalog-filter-radio" type="radio" name="hotel-type" value="hotel" checked>
                 Гостиница
               </label>
               <label class="catalog-filter-item">
-                <input type="radio" name="hotel-type" value="motel">
+                <input class="catalog-filter-radio" type="radio" name="hotel-type" value="motel">
                 Мотель
               </label>
               <label class="catalog-filter-item">
-                <input type="radio" name="hotel-type" value="apartments">
+                <input class="catalog-filter-radio" type="radio" name="hotel-type" value="apartments">
                 Апартаменты
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-items">
+            <fieldset class="catalog-filter-items catalog-price-range-wrapper">
               <legend class="catalog-filter-items-title">Стоимость, ₽:</legend>
-              <label class="visually-hidden" for="catalog-price-range catalog-price-range-min">от</label>
-              <input class="visually-hidden" type="number" value="0" name="min-price" id="catalog-price-from">
-              <label class="visually-hidden" for="catalog-price-range catalog-price-range-max">до</label>
-              <input class="visually-hidden" type="number" value="9000" name="max-price" id="catalog-price-to">
-              <div class="visually-hidden price-range-wrapper">
+              <label class="catalog-price-range">
+                <input class="catalog-price-input input-min-price" type="number" value="0" name="min-price">
+                <span>от</span>
+              </label>
+              <label class="catalog-price-range">
+                <input class="catalog-price-input input-max-price" type="number" value="9000" name="max-price">
+                <span>до</span>
+              </label>
+              <div class="price-range">
                 <label class="visually-hidden">диапазон цен:</label>
-                <input type="range" id="lower" min="0" max="100" step="1" aria-label="Смена минимальной стоимости">
-                <input type="range" id="upper" min="0" max="100" step="1" aria-label="Смена максимальной стоимости">
+                <div class="price-selected-interval" style="width: 226px; left: 0;">
+                  <button class="range-toggle toggle-min" aria-label="Смена минимальной стоимости" type="button"></button>
+                  <button class="range-toggle toggle-max" aria-label="Смена максимальной стоимости" type="button"></button>
+                </div>
               </div>
             </fieldset>
             <div class="catalog-form-btn-wrapper">

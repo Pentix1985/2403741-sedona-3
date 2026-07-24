@@ -248,7 +248,7 @@ body {
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
-;
+  ;
 }
 
 .header-btn {
@@ -782,10 +782,11 @@ body {
 }
 
 .catalog-form-filters .catalog-price-range-wrapper {
-  width: 288px;
+  min-width: 288px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 2px;
+  align-self: start;
 }
 
 .catalog-price-input {
@@ -796,10 +797,10 @@ body {
   border: none;
 }
 
-.catalog-price-input:hover::-webkit-inner-spin-button,
-.catalog-price-input:hover::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.catalog-price-input::-webkit-inner-spin-button,
+.catalog-price-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .catalog-price-input:hover {
@@ -838,7 +839,7 @@ body {
 
 .price-range {
   grid-column: 1 / -1;
-  margin-top: 36px;
+  margin-top: 48px;
   width: 100%;
   position: relative;
 }
@@ -893,11 +894,7 @@ body {
   display: flex;
   align-items: flex-start;
   position: relative;
-}
-
-.catalog-filter-item input {
-  appearance: none;
-  margin-right: 16px;
+  gap: 16px;
 }
 
 .catalog-filter-item:has(input[type="checkbox"])::before {
@@ -907,10 +904,11 @@ body {
   width: 12px;
   height: 10px;
   border-radius: 50%;
-  left: 8px;
-  top: 8px;
+  left: 5px;
+  top: 5px;
   mask-image: url("../images/icons/form-checked.svg");
   background-color: #3f5e72;
+  appearance: none;
 }
 
 .catalog-filter-item:has(input[type="checkbox"]:checked)::before {
@@ -924,8 +922,8 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  left: 10px;
-  top: 8px;
+  left: 5px;
+  top: 5px;
   background-color: #3f5e72;
 }
 
@@ -955,6 +953,8 @@ body {
   border-radius: 4px;
   background-color: #ffffff;
   flex-shrink: 0;
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-radio {
@@ -963,6 +963,8 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   flex-shrink: 0;
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-items {
@@ -973,7 +975,7 @@ body {
   gap: 16px;
   margin: 0;
   padding: 0;
-  max-width: 288px;
+  max-width: 200px;
 }
 
 .catalog-filter-items:nth-child(2) {
@@ -1270,4 +1272,256 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-content-wrapper {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  box-shadow: 0 25px 50px 0 #00000026;
+  background-color: #ffffff;
+  min-height: 100px;
+  width: 717px;
+}
+
+.modal-title {
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button span {
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+}
+
+.modal-close-button span:first-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-button span:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23px 88px;
+}
+
+.modal-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 119px 1fr;
+  gap: 0 18px;
+  align-items: center;
+  position: relative;
+}
+
+.modal-label input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #f2f2f2;
+}
+
+.modal-label input:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-label-info {
+  grid-column: 2 / -1;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 4px;
+  margin-left: 20px;
+  display: none;
+  text-transform: none;
+}
+
+.show-error {
+  display: inline;
+  color: #ff5757;
+}
+
+.show-msg {
+  display: inline;
+}
+
+.modal-search-btn {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 25px;
+}
+
+.modal-label-count {
+  grid-column: span 2;
+}
+
+.modal-label-count input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.count-wrapper {
+  display: flex;
+  min-width: 110px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.modal-label-count .count-input {
+  appearance: textfield;
+  width: 31px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
+}
+
+.count-input:hover {
+  background-color: #e5e5e5;
+}
+
+.label-count-btn {
+  width: 40px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-count-btn:hover {
+  color: #000000;
+  background-color: #e5e5e5;
+}
+
+.label-count-btn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: currentColor;
+}
+
+.plus-btn::before {
+  mask-image: url("../images/icons/plus.svg");
+}
+
+.minus-btn::before {
+  mask-image: url("../images/icons/minus.svg");
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  background-color: rgba(131, 179, 211, 1);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--button-text, #ffffff);
+  mask-image: url("../images/icons/info.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 256px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 15px 18px 18px 22px;
+  left: -115px;
+  top: calc(100% + 15px);
+  text-align: left;
+  border-radius: 10px;
+}
+
+.tooltip::before {
+  visibility: hidden;
+  content: "";
+  top: -1px;
+  position: absolute;
+  border: 9.5px solid transparent;
+  border-bottom: 9px solid #333;
+  top: -18px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.info:hover .tooltip::before {
+  visibility: visible;
+}
+
+.info:hover .tooltip {
+  visibility: visible;
 }

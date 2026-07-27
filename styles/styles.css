@@ -76,7 +76,7 @@ body {
   justify-content: space-between;
 }
 
-.header-logo-nav-wrapper {
+.logo-nav-wrapper {
   display: flex;
   gap: 28px;
 }
@@ -100,7 +100,7 @@ body {
   opacity: 0.6;
 }
 
-.header-user-menu-wrapper {
+.user-menu-wrapper {
   display: flex;
   gap: 20px;
 }
@@ -118,7 +118,7 @@ body {
   max-width: 600px;
 }
 
-.header-user-menu-list {
+.user-menu-list {
   display: flex;
   list-style: none;
   margin: 0;
@@ -127,7 +127,7 @@ body {
   min-width: 88px;
 }
 
-.user-menu-item-link {
+.menu-item-link {
   display: block;
   min-height: 64px;
   min-width: 44px;
@@ -137,11 +137,11 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.user-menu-item-link:hover {
+.menu-item-link:hover {
   background-color: rgba(117, 97, 87, 0.1);
 }
 
-.user-menu-item-link:hover .favorite-count {
+.menu-item-link:hover .favorite-count {
   transform: scale(1.5);
 }
 
@@ -264,12 +264,17 @@ body {
   background-color: #82b3d3;
 }
 
-.button-form:hover {
+.button-form:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
-.button-form:focus {
+.button-form:not(:disabled):focus {
   background-color: #68a2ca;
+}
+
+.button-form:disabled {
+  cursor: not-allowed;
+  background-color: #e5e5e5;
 }
 
 
@@ -277,22 +282,28 @@ body {
   background-color: #7db54f;
 }
 
-.reset-button-color-form {
+.reset-button-form {
   background-color: transparent;
 }
 
-.reset-button-color-form:hover {
+.reset-button-form:not(:disabled):hover {
   background-color: transparent;
   opacity: 60%;
 }
 
-.reset-button-color-form:focus {
+.reset-button-form:not(:disabled):focus {
   background-color: transparent;
 }
 
-.reset-button-color-form:active {
+.reset-button-form:not(:disabled):active {
   background-color: transparent;
   opacity: 30%;
+}
+
+.reset-button-form:disabled {
+  background-color: #ffffff;
+  opacity: 20%;
+  color: #ff5757;
 }
 
 .button-large {
@@ -378,7 +389,7 @@ body {
   margin: 0;
 }
 
-.reasons-title-text-wrapper {
+.reasons-text-wrapper {
   width: 655px;
   margin: 0 auto;
   padding-top: 69px;
@@ -389,13 +400,13 @@ body {
   margin-bottom: 25px;
 }
 
-.reasons-card-with-img {
+.reasons-card-img {
   padding: 0;
   width: 100%;
   display: flex;
 }
 
-.reasons-card-with-img-text-wrapper {
+.reasons-img-text {
   padding: 102px 80px;
 }
 
@@ -421,20 +432,20 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.reasons-cards li.reasons-card-with-img {
+.reasons-cards li.reasons-card-img {
   background-color: #82B3D3;
 }
 
-.reasons-card-with-img-text-wrapper .card-text,
-.reasons-card-with-img-text-wrapper {
+.reasons-img-text .card-text,
+.reasons-img-text {
   color: #ffffff;
 }
 
-.reasons-cards li:nth-child(even of .reasons-card-with-img) {
+.reasons-cards li:nth-child(even of .reasons-card-img) {
   flex-direction: row-reverse;
 }
 
-.come-title-text-wrapper {
+.come-text-wrapper {
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
@@ -489,7 +500,7 @@ body {
   display: none;
 }
 
-.interested-title-text-wrapper {
+.interested-text-wrapper {
   width: 592px;
   margin: 0 auto;
 }
@@ -517,7 +528,7 @@ body {
   padding: 96px 0 104px 0;
 }
 
-.subscription-title-text-wrapper {
+.subscription-text-wrapper {
   width: 475px;
   margin-left: auto;
   margin-right: auto;
@@ -790,7 +801,7 @@ body {
   gap: 70px;
 }
 
-.catalog-filter-items-title {
+.catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -798,7 +809,7 @@ body {
   margin-bottom: 32px;
 }
 
-.catalog-form-filters .catalog-price-range-wrapper {
+.catalog-form-filters .price-range-wrapper {
   min-width: 288px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1005,14 +1016,14 @@ body {
   font-size: 18px;
 }
 
-.catalog-form-btn-wrapper {
+.catalog-btn-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-top: 56px;
 }
 
-.catalog-form-btn-wrapper button {
+.catalog-btn-wrapper button {
   width: 191px;
 }
 
@@ -1301,6 +1312,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-active {
+  display: flex;
+}
+
 .modal-content-wrapper {
   position: relative;
   margin: auto;
@@ -1402,8 +1417,13 @@ body {
   background-size: 20px 20px;
 }
 
-.modal-label input:hover {
+.modal-label input:not(:disabled):hover {
   background-color: #e5e5e5;
+}
+
+.modal-label input:disabled {
+  cursor: not-allowed;
+  opacity: 40%;
 }
 
 .modal-label-info {
@@ -1465,10 +1485,6 @@ body {
   text-align: center;
 }
 
-.count-input:hover {
-  background-color: #e5e5e5;
-}
-
 .label-count-btn {
   width: 40px;
   height: 48px;
@@ -1480,9 +1496,14 @@ body {
   justify-content: center;
 }
 
-.label-count-btn:hover {
+.label-count-btn:not(:disabled):hover {
   color: #000000;
   background-color: #e5e5e5;
+}
+
+.label-count-btn:disabled {
+  opacity: 40%;
+  cursor: not-allowed;
 }
 
 .label-count-btn::before {

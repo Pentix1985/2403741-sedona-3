@@ -11,11 +11,13 @@
 
   <body>
     <div class="container">
+      <!-- Header -->
       <header class="main-header" data-test="header">
-        <div class="header-logo-nav-wrapper">
+        <div class="logo-nav-wrapper">
           <a class="header-logo" href="index.html" aria-current="page">
             <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
           </a>
+          <!-- Навигация -->
           <nav class="header-nav">
             <ul class="nav-list">
               <li class="nav-item">
@@ -36,21 +38,23 @@
             </ul>
           </nav>
         </div>
-        <div class="header-user-menu-wrapper">
-          <ul class="header-user-menu-list">
+        <div class="user-menu-wrapper">
+          <ul class="user-menu-list">
             <li class="user-menu-item">
-              <a class="user-menu-item-link search" href="#">
+              <a class="menu-item-link search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="user-menu-item">
-              <a class="user-menu-item-link favorite" href="#">
+              <a class="menu-item-link favorite" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
-                <span class="visually-hidden">Отелей в избранном</span>
+                <span class="visually-hidden">
+                  Отелей в избранном
+                </span>
                 <span class="favorite-count">
                   12
                 </span>
@@ -62,14 +66,17 @@
           </a>
         </div>
       </header>
+      <!-- Содержимое - контент страницы -->
       <main class="main-content" data-test="main">
         <section class="hero" data-test="hero">
-          <h1 class="visually-hidden">Седона</h1>
+          <h1 class="visually-hidden">
+            Седона
+          </h1>
           <img class="hero-img" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
         <section class="reasons" data-test="advantages">
-          <div class="reasons-title-text-wrapper">
+          <div class="reasons-text-wrapper">
             <h2 class="reasons-title title">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h2>
@@ -78,29 +85,49 @@
             </p>
           </div>
           <ul class="reasons-cards">
-            <li class="card reasons-card-with-img">
-              <div class="reasons-card-with-img-text-wrapper">
-                <h3 class="card-title">Настоящий городок</h3>
-                <p class="card-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <li class="card reasons-card-img">
+              <div class="reasons-img-text">
+                <h3 class="card-title">
+                  Настоящий городок
+                </h3>
+                <p class="card-text">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
               </div>
               <img class="reason-img" src="images/town-street.jpg" width="800" height="385" alt="Часть улицы городка">
             </li>
             <li class="card">
-              <h3 class="card-title">Небольшая площадь</h3>
-              <p class="card-text">Все достопримечательности находятся очень близко</p>
+              <h3 class="card-title">
+                Небольшая площадь
+              </h3>
+              <p class="card-text">
+                Все достопримечательности находятся очень близко
+              </p>
             </li>
             <li class="card">
-              <h3 class="card-title">Красивая дорога</h3>
-              <p class="card-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="card-title">
+                Красивая дорога
+              </h3>
+              <p class="card-text">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
             </li>
             <li class="card">
-              <h3 class="card-title">Мало туристов</h3>
-              <p class="card-text">Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="card-title">
+                Мало туристов
+              </h3>
+              <p class="card-text">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
             </li>
-            <li class="card reasons-card-with-img">
-              <div class="reasons-card-with-img-text-wrapper">
-                <h3 class="card-title">Там есть мост дьявола</h3>
-                <p class="card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <li class="card reasons-card-img">
+              <div class="reasons-img-text">
+                <h3 class="card-title">
+                  Там есть мост дьявола
+                </h3>
+                <p class="card-text">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
               </div>
               <img class="reason-img" src="images/hell-bridge.jpg" width="800" height="385"
                 alt="Каньон, столовые горы, мост дьявола">
@@ -108,7 +135,7 @@
           </ul>
         </section>
         <section class="come">
-          <div class="come-title-text-wrapper">
+          <div class="come-text-wrapper">
             <h2 class="come-title title">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
             </h2>
@@ -118,7 +145,9 @@
           </div>
           <ul class="come-cards">
             <li class="come-card card">
-              <h3 class="card-title advantage-home">Жильё</h3>
+              <h3 class="card-title advantage-home">
+                Жильё
+              </h3>
               <p class="card-text">
                 Рекомендуем пожить
                 <br>
@@ -128,7 +157,9 @@
               </p>
             </li>
             <li class="come-card card">
-              <h3 class="card-title advantage-burger">Еда</h3>
+              <h3 class="card-title advantage-burger">
+                Еда
+              </h3>
               <p class="card-text">
                 Всегда заказывайте
                 <br>
@@ -138,7 +169,9 @@
               </p>
             </li>
             <li class="come-card card">
-              <h3 class="card-title advantage-prize">Сувениры</h3>
+              <h3 class="card-title advantage-prize">
+                Сувениры
+              </h3>
               <p class="card-text">
                 Не только китайского,
                 <br>
@@ -150,7 +183,7 @@
           </ul>
         </section>
         <section class="interested" data-test="search">
-          <div class="interested-title-text-wrapper">
+          <div class="interested-text-wrapper">
             <h2 class="interested-title title">
               Заинтересовались?
             </h2>
@@ -165,7 +198,7 @@
           </div>
         </section>
         <section class="subscription main-subscription" data-test="subscribe">
-          <div class="subscription-title-text-wrapper">
+          <div class="subscription-text-wrapper">
             <h2 class="subscription-title title">
               Подпишитесь на рассылку
             </h2>
@@ -185,25 +218,34 @@
           </form>
         </section>
       </main>
+      <!-- Footer -->
       <footer class="main-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">VK</span>
+              <span class="visually-hidden">
+                VK
+              </span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-link social-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+              <span class="visually-hidden">
+                Telegram
+              </span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
+              <span class="visually-hidden">
+                Youtube
+              </span>
             </a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
         <a class="footer-logo" href="https://htmlacademy.ru/">
           <svg class="html-logo" role="img" aria-label="Логотип HTML-Academy" xmlns="http://www.w3.org/2000/svg"
             width="115" height="33" fill="none" viewBox="0 0 115 33">
@@ -214,35 +256,47 @@
       </footer>
     </div>
 
+    <!-- Чтобы модальное окно отобразилось необходимо добавить класс modal-active,
+    или нажать на кнопку "Поиск гостиницы в Седоне" в index.html -->
     <div class="modal-container">
       <div class="modal-content-wrapper">
-        <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
+        <h2 class="modal-title title">
+          Поиск гостиницы в Седоне
+        </h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-label">
-            <label class="label-text" for="check-in-date">Дата заезда:</label>
-            <input class="date-input" type="text" value="27 апреля 2020" id="check-in-date">
+            <label class="label-text" for="check-in-date">
+              Дата заезда:
+            </label>
+            <input class="date-input" type="text" value="27 апреля 2020" id="check-in-date" name="dateIn" required>
             <p class="modal-label-info show-error">
               Мы не можем отправить вас в прошлое.
             </p>
           </div>
           <div class="modal-label">
-            <label class="label-text" for="check-out-date">Дата выезда:</label>
-            <input class="date-input" type="text" value="1 сентября 2023" id="check-out-date">
+            <label class="label-text" for="check-out-date">
+              Дата выезда:
+            </label>
+            <input class="date-input" type="text" value="1 сентября 2023" id="check-out-date" required>
             <p class="modal-label-info show-msg">
               На эти даты есть свободные номера. Пока есть.
             </p>
           </div>
           <div class="modal-label modal-label-count">
-            <label for="men">Взрослые:</label>
+            <label for="men">
+              Взрослые:
+            </label>
             <div class="count-wrapper">
               <button class="label-count-btn minus-btn" type="button"></button>
-              <input class="count-input" id="men" type="number" value="2">
+              <input class="count-input" id="men" type="number" value="2" required>
               <button class="label-count-btn plus-btn" type="button"></button>
             </div>
           </div>
           <div class="modal-label modal-label-count">
             <div class="info-wrapper">
-              <label for="children">Дети:</label>
+              <label for="children">
+                Дети:
+              </label>
               <button class="info" type="button">
                 <span class="tooltip">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
@@ -262,7 +316,9 @@
         </form>
         <button class="modal-close-button" type="submit">
           <span></span>
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">
+            Закрыть
+          </span>
           <span></span>
         </button>
       </div>

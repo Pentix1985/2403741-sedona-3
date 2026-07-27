@@ -78,7 +78,7 @@ body {
 
 .header-logo-nav-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 28px;
 }
 
 .header-logo {
@@ -124,7 +124,7 @@ body {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  min-width: 100px;
+  min-width: 88px;
 }
 
 .user-menu-item-link {
@@ -158,6 +158,7 @@ body {
   display: inline-block;
   overflow-wrap: break-word;
   line-height: 24px;
+  font-size: 20px;
   color: #000000;
   font-weight: 700;
   text-align: center;
@@ -310,13 +311,15 @@ body {
   background-size: 100% auto, cover;
   background-position: bottom center, center;
   padding-top: 51px;
-  text-align: center;
   padding-bottom: 82px;
+  text-align: center;
 }
 
 .hero-img {
+  display: block;
   width: 458px;
   height: 352px;
+  margin: 0 auto;
 }
 
 .title {
@@ -340,19 +343,22 @@ body {
 
 .card {
   width: 400px;
-  padding: 102px 85px 102px 85px;
+  padding: 112px 80px;
   background-color: #82b3d3;
   min-height: 385px;
 }
 
 .card-title {
-  margin: 0 auto 30px auto;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  max-width: 175px;
+  max-width: 172px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-title::after {
@@ -373,10 +379,14 @@ body {
 }
 
 .reasons-title-text-wrapper {
-  width: 651px;
+  width: 655px;
   margin: 0 auto;
   padding-top: 69px;
-  padding-bottom: 69px;
+  padding-bottom: 90px;
+}
+
+.reasons-title {
+  margin-bottom: 25px;
 }
 
 .reasons-card-with-img {
@@ -386,7 +396,7 @@ body {
 }
 
 .reasons-card-with-img-text-wrapper {
-  padding: 102px 85px 102px 85px;
+  padding: 102px 80px;
 }
 
 .reason-img {
@@ -449,13 +459,17 @@ body {
 
 .come-cards .card-title::before {
   content: "";
-  display: inline-block;
-  min-height: 76px;
+  display: block;
+  height: 72px;
   width: 100%;
   background-color: rgba(131, 179, 211, 1);
   mask-repeat: no-repeat;
   mask-position: center;
   margin-bottom: 30px;
+}
+
+.come-card {
+  padding: 81px 85px;
 }
 
 .advantage-home::before {
@@ -589,8 +603,9 @@ body {
   grid-template-columns: 1fr auto 1fr;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  gap: 41px;
 }
 
 .footer-social-list {
@@ -655,6 +670,7 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 28px;
 }
 
 .footer-phone:hover {
@@ -673,6 +689,7 @@ body {
   color: inherit;
   display: inline-block;
   justify-self: end;
+  align-self: end;
 }
 
 .footer-logo:hover {
@@ -1292,6 +1309,7 @@ body {
   background-color: #ffffff;
   min-height: 100px;
   width: 717px;
+  border-radius: 30px;
 }
 
 .modal-title {
@@ -1328,6 +1346,22 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.modal-close-button:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:focus {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:active {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:active span {
+  opacity: 30%;
+}
+
 .modal-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1361,6 +1395,13 @@ body {
   background-color: #f2f2f2;
 }
 
+.date-input {
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+  background-size: 20px 20px;
+}
+
 .modal-label input:hover {
   background-color: #e5e5e5;
 }
@@ -1374,6 +1415,8 @@ body {
   color: #333333;
   margin-top: 4px;
   margin-left: 20px;
+  margin-bottom: 0;
+  margin-right: 0;
   display: none;
   text-transform: none;
 }
@@ -1449,6 +1492,7 @@ body {
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: currentColor;
+  opacity: 20%;
 }
 
 .plus-btn::before {
@@ -1457,6 +1501,10 @@ body {
 
 .minus-btn::before {
   mask-image: url("../images/icons/minus.svg");
+}
+
+.label-count-btn:hover::before {
+  opacity: 1;
 }
 
 .info-wrapper {
@@ -1513,7 +1561,7 @@ body {
   position: absolute;
   border: 9.5px solid transparent;
   border-bottom: 9px solid #333;
-  top: -18px;
+  top: -17px;
   left: 50%;
   transform: translate(-50%);
 }

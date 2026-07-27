@@ -51,7 +51,7 @@
                   Избранное
                 </span>
                 <span class="visually-hidden">Отелей в избранном</span>
-                <span class="favorite-count" href="#">
+                <span class="favorite-count">
                   12
                 </span>
               </a>
@@ -117,17 +117,35 @@
             </p>
           </div>
           <ul class="come-cards">
-            <li class="card">
+            <li class="come-card card">
               <h3 class="card-title advantage-home">Жильё</h3>
-              <p class="card-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="card-text">
+                Рекомендуем пожить
+                <br>
+                в настоящем мотеле,
+                <br>
+                всё как в кино!
+              </p>
             </li>
-            <li class="card">
+            <li class="come-card card">
               <h3 class="card-title advantage-burger">Еда</h3>
-              <p class="card-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="card-text">
+                Всегда заказывайте
+                <br>
+                топовый фирменный бургер,
+                <br>
+                вы не разочаруетесь!
+              </p>
             </li>
-            <li class="card">
+            <li class="come-card card">
               <h3 class="card-title advantage-prize">Сувениры</h3>
-              <p class="card-text">Не только китайского, но и настоящего местного производства!</p>
+              <p class="card-text">
+                Не только китайского,
+                <br>
+                но и настоящего местного
+                <br>
+                производства!
+              </p>
             </li>
           </ul>
         </section>
@@ -137,7 +155,9 @@
               Заинтересовались?
             </h2>
             <p class="interested-text text">
-              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+              Укажите предполагаемые даты поездки,
+              <br>
+              и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
             <button class="button button-large interested-btn" type="button">
               Поиск гостиницы в Седоне
@@ -193,47 +213,49 @@
         </a>
       </footer>
     </div>
+
     <div class="modal-container">
       <div class="modal-content-wrapper">
         <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-label">
-            Дата заезда:
-            <input type="text" value="27 апреля 2020">
-            <span class="modal-label-info show-error">
+          <div class="modal-label">
+            <label class="label-text" for="check-in-date">Дата заезда:</label>
+            <input class="date-input" type="text" value="27 апреля 2020" id="check-in-date">
+            <p class="modal-label-info show-error">
               Мы не можем отправить вас в прошлое.
-            </span>
-          </label>
-          <label class="modal-label ">
-            Дата выезда:
-            <input type="text" value="1 сентября 2023">
-            <span class="modal-label-info show-msg">
+            </p>
+          </div>
+          <div class="modal-label">
+            <label class="label-text" for="check-out-date">Дата выезда:</label>
+            <input class="date-input" type="text" value="1 сентября 2023" id="check-out-date">
+            <p class="modal-label-info show-msg">
               На эти даты есть свободные номера. Пока есть.
-            </span>
-          </label>
-          <label class="modal-label modal-label-count" for="mens">
-            Взрослые:
+            </p>
+          </div>
+          <div class="modal-label modal-label-count">
+            <label for="men">Взрослые:</label>
             <div class="count-wrapper">
               <button class="label-count-btn minus-btn" type="button"></button>
-              <input class="count-input" id="mens" type="number" value="2">
+              <input class="count-input" id="men" type="number" value="2">
               <button class="label-count-btn plus-btn" type="button"></button>
             </div>
-          </label>
-          <label class="modal-label modal-label-count" for="childrens">
+          </div>
+          <div class="modal-label modal-label-count">
             <div class="info-wrapper">
-              Дети:
+              <label for="children">Дети:</label>
               <button class="info" type="button">
                 <span class="tooltip">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
                 </span>
               </button>
             </div>
             <div class="count-wrapper">
               <button class="label-count-btn minus-btn" type="button"></button>
-              <input class="count-input" id="childrens" type="number" value="2">
+              <input class="count-input" id="children" type="number" value="2">
               <button class="label-count-btn plus-btn" type="button"></button>
             </div>
-          </label>
+          </div>
           <button class="modal-search-btn button button-form" type="submit">
             Найти
           </button>
@@ -245,6 +267,7 @@
         </button>
       </div>
     </div>
+
     <script>
       "use strict";
 

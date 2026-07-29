@@ -289,7 +289,6 @@ body {
 .reset-button-form:not(:disabled):hover {
   background-color: transparent;
   opacity: 60%;
-  cursor: not-allowed;
 }
 
 .reset-button-form:not(:disabled):focus {
@@ -305,6 +304,7 @@ body {
   background-color: #ffffff;
   opacity: 20%;
   color: #ff5757;
+  cursor: not-allowed;
 }
 
 .button-large {

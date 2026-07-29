@@ -157,7 +157,7 @@ body {
 }
 
 .nav-link {
-  display: inline-block;
+  display: block;
   overflow-wrap: break-word;
   line-height: 24px;
   font-size: 20px;
@@ -165,7 +165,6 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  background-color: #ffffff;
   padding: 20px 16px 20px 16px;
   cursor: pointer;
   max-width: 100%;
@@ -241,17 +240,16 @@ body {
   word-break: break-all;
 }
 
-.button:hover {
+.button:not(:disabled):hover {
   background-color: #615048;
 }
 
-.button:focus {
+.button:not(:disabled):focus {
   background-color: #615048;
 }
 
-.button:active {
+.button:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
-  ;
 }
 
 .header-btn {
@@ -291,6 +289,7 @@ body {
 .reset-button-form:not(:disabled):hover {
   background-color: transparent;
   opacity: 60%;
+  cursor: not-allowed;
 }
 
 .reset-button-form:not(:disabled):focus {
@@ -568,11 +567,11 @@ body {
   flex-shrink: 0;
 }
 
-.subscription-mail:hover {
+.subscription-mail:not(:disabled):hover {
   background-color: #e5e5e5;
 }
 
-.subscription-mail:focus {
+.subscription-mail:not(:disabled):focus {
   background-color: #e5e5e5;
 }
 
@@ -809,6 +808,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-form-filters .price-range-wrapper {
@@ -833,11 +833,11 @@ body {
   margin: 0;
 }
 
-.catalog-price-input:hover {
+.catalog-price-input:not(:disabled):hover {
   background-color: #e5e5e5;
 }
 
-.catalog-price-input:focus {
+.catalog-price-input:not(:disabled):focus {
   background-color: #e5e5e5;
 }
 
@@ -1049,6 +1049,7 @@ body {
   width: 292px;
   height: 49px;
   padding-left: 20px;
+  padding-right: 40px;
   appearance: none;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
@@ -1151,6 +1152,7 @@ body {
   mask-position: left;
   mask-repeat: space no-repeat;
   max-width: 96px;
+  mask-size: 18px 17px;
 }
 
 .rating {
@@ -1166,11 +1168,11 @@ body {
 }
 
 .rating-stars-3 {
-  width: 60px;
+  width: 65px;
 }
 
 .rating-stars-4 {
-  width: 78px;
+  width: 88px;
 }
 
 .rating-stars-5 {
@@ -1224,15 +1226,15 @@ body {
   background-color: #7db54f;
 }
 
-.favorite-added:hover {
+.favorite-added:not(:disabled):hover {
   background-color: #6c9e42;
 }
 
-.favorite-added:focus {
+.favorite-added:not(:disabled):focus {
   background-color: #6c9e42;
 }
 
-.favorite-added:active {
+.favorite-added:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1293,7 +1295,7 @@ body {
 }
 
 .pagination-points {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -1363,15 +1365,15 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.modal-close-button:hover {
+.modal-close-button:not(:disabled):hover {
   background-color: #e5e5e5;
 }
 
-.modal-close-button:focus {
+.modal-close-button:not(:disabled):focus {
   background-color: #e5e5e5;
 }
 
-.modal-close-button:active {
+.modal-close-button:not(:disabled):active {
   background-color: #e5e5e5;
 }
 

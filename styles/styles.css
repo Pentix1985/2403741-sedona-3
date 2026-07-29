@@ -79,6 +79,7 @@ body {
 .logo-nav-wrapper {
   display: flex;
   gap: 28px;
+  align-items: flex-start;
 }
 
 .header-logo {
@@ -125,6 +126,7 @@ body {
   padding: 0;
   flex-wrap: wrap;
   min-width: 88px;
+  max-width: 200px;
 }
 
 .menu-item-link {
@@ -1532,6 +1534,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  word-break: break-all;
 }
 
 .info {
@@ -1542,6 +1545,7 @@ body {
   border: none;
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .info::before {
@@ -1588,6 +1592,14 @@ body {
 }
 
 .info:hover .tooltip::before {
+  visibility: visible;
+}
+
+.info:hover .tooltip {
+  visibility: visible;
+}
+
+.info:focus .tooltip::before {
   visibility: visible;
 }
 

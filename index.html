@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -222,21 +222,21 @@
       <footer class="main-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-link social-vk" href="https://vk.com/htmlacademy">
+            <a class="social-link social-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 VK
               </span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link social-telegram" href="https://t.me/htmlacademy">
+            <a class="social-link social-telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Telegram
               </span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Youtube
               </span>
@@ -246,7 +246,7 @@
         <a class="footer-phone" href="tel:+78128121212">
           +7 (812) 812-12-12
         </a>
-        <a class="footer-logo" href="https://htmlacademy.ru/">
+        <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
           <svg class="html-logo" role="img" aria-label="Логотип HTML-Academy" xmlns="http://www.w3.org/2000/svg"
             width="115" height="33" fill="none" viewBox="0 0 115 33">
             <path
@@ -287,9 +287,17 @@
               Взрослые:
             </label>
             <div class="count-wrapper">
-              <button class="label-count-btn minus-btn" type="button"></button>
+              <button class="label-count-btn minus-btn" type="button">
+                <span class="visually-hidden">
+                  Увеличить количество взрослых
+                </span>
+              </button>
               <input class="count-input" id="men" type="number" value="2" name="men" required>
-              <button class="label-count-btn plus-btn" type="button"></button>
+              <button class="label-count-btn plus-btn" type="button">
+                <span class="visually-hidden">
+                  Уменьшить количество взрослых
+                </span>
+              </button>
             </div>
           </div>
           <div class="modal-label modal-label-count">
@@ -305,9 +313,17 @@
               </button>
             </div>
             <div class="count-wrapper">
-              <button class="label-count-btn minus-btn" type="button"></button>
+              <button class="label-count-btn minus-btn" type="button">
+                <span class="visually-hidden">
+                  Увеличить количество детей
+                </span>
+              </button>
               <input class="count-input" id="children" type="number" value="2" name="children">
-              <button class="label-count-btn plus-btn" type="button"></button>
+              <button class="label-count-btn plus-btn" type="button">
+                <span class="visually-hidden">
+                  Уменьшить количество детей
+                </span>
+              </button>
             </div>
           </div>
           <button class="modal-search-btn button button-form" type="submit">
@@ -315,9 +331,10 @@
           </button>
         </form>
         <button class="modal-close-button" type="submit">
+          <!-- Пустые спаны для создания крестика на css, для кнопки закрытия модального окна -->
           <span></span>
-          <span class="visually-hidden">
-            Закрыть
+          <span class="visually-hidden close-modal-btn">
+            Закрыть модальное окно
           </span>
           <span></span>
         </button>

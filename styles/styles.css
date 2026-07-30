@@ -1553,6 +1553,7 @@ body {
   display: inline-block;
   flex-shrink: 0;
   padding: 0;
+  font-family: inherit;
 }
 
 .info::before {
@@ -1567,6 +1568,7 @@ body {
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
+  box-shadow: 0 15px 30px 0 #0000004D;
   transform: translate(-50%, -50%);
 }
 
@@ -1579,11 +1581,13 @@ body {
   width: 256px;
   color: #ffffff;
   background-color: #333333;
-  padding: 15px 18px 18px 22px;
+  padding: 23px 18px 22px 22px;
   left: -115px;
   top: calc(100% + 15px);
   border-radius: 10px;
   word-break: normal;
+  text-align: left;
+  box-shadow: 0 15px 30px 0 #0000004D;
 }
 
 .tooltip::before {
@@ -1610,6 +1614,6 @@ body {
   visibility: visible;
 }
 
-.info:hover .tooltip {
+.info:focus .tooltip {
   visibility: visible;
 }
